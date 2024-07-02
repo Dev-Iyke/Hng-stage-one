@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>HNG Internship</h1>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <div class="hero">
+        <div class="image">
+            <img data-testid="slackProfilePicture" src="./iyke.jpg" width="512px" height="512px" alt="">
+        </div>
+        <div class="details">
+          <h2 data-testid="slackDisplayName">Obasi Ikechukwu</h2>
+          <p>Front-end Developer</p>
+          <p data-testid="slackEmail" id="email">obasiikechukwu761@gmail.com</p>
+          <p>Current time(UTC): <span id="current-time" data-testid="currentTimeUTC"></span></p>
+          <p>Current Day: <span id="current-day" data-testid="currentDay"></span></p>
+        </div>
+      </div>
+
+      <!-- Goals section -->
+      <section>
+        <div  class="goals">
+        <h2>My Goals</h2>
+        <ul>
+          <li>Learn and improve my skills as a front-end developer</li>
+          <li>Learn React, Next.js and other useful frontend frameworks and libraries</li>
+          <li>Create a responsive and visually appealing portfolio</li>
+          <li>Get Internships</li>
+          <li>Become a Full Stack Software Engineer</li>
+        </ul>
+      </div>
+      </section>
+    </main>
+    <footer>
+      <!-- Links -->
+      <div class="links">
+        <p>Learn more</p>
+        <div class="more-links">
+          <a data-testid="hngLink" href="http://hng.tech/learn">HNG Tech</a> |
+          <a data-testid="keywordLink" href="http://keyword.dog/">Keyword</a> |
+          <a data-testid="scrapeanywebLink" href="http://scrapeanyweb.site/">ScrapeAnyWebLink</a>
+        </div>
+      </div>
+      <p class="copy">Copyright Obasi Ikechukwu Thompson &copy;</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

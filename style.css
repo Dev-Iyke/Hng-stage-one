@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #eee;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+/** Header Section */
+header{
+  background-color: navy;
+  padding: 1.5rem;
+}
+header h1{
+  font-size: 2.8rem;
+  text-align: center;
+  color: gold;
+  font-weight: 600;
+}
+
+/** Hero Section */
+.hero{
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex: auto;
+  gap: 10rem;
+  align-items: center;
+  justify-content: center;
+}
+.hero .details{
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  font-size: 1.5em;
+}
+.hero .details p:first-of-type{
+  color: navy;
+}
+
+/** Goals Section */
+section{
+  background-color: navy;
+  padding: 1.5rem 0;
+  color: #eee;
+}
+.goals{
+  width: 60%;
+  margin: 0 auto;
+}
+.goals h2{
+  font-size: 2.5rem;
+  text-align: center;
+  color: gold;
+  font-weight: 600;
+}
+.goals ul li{
+  list-style: decimal-leading-zero;
+  font-size: 1.3rem;
+}
+
+/** Footer Section */
+footer{
+  background-color: gold;
+  color: navy;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+footer a{
+  text-decoration: none;
+  color: rgb(196, 6, 6);
+}
+footer .copy{
+  margin: 2rem 0 0;
+}
+
+@media screen and (min-width: 551px) and (max-width:1200px){
+  .hero{
+    gap: 4rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  header{
+    padding: .8rem;
+  }
+  header h1{
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .hero{
+    gap: 2rem;
+  }
+  .hero .image{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .hero .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+  }
+  .hero .details{
+    font-size: 1em;
+    max-inline-size: 90%;
+  }
+  .hero .details #email{
+    word-wrap: break-word;
+  }
+  footer .more-links{
+    padding: 0 .8rem;
+  }
+}
