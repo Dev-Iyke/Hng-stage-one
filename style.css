@@ -50,7 +50,7 @@ section{
   color: #eee;
 }
 .goals{
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
 }
 .goals h2{
@@ -79,11 +79,17 @@ footer .copy{
   margin: 2rem 0 0;
 }
 
+/** Adjusted styles for screen width between 551px and 1200px */
 @media screen and (min-width: 551px) and (max-width:1200px){
   .hero{
     gap: 4rem;
   }
+  .goals{
+    width: 70%;
+  }
 }
+
+/** Adjusted styles for screen width narrower than 550px */
 @media screen and (max-width: 550px) {
   header{
     padding: .8rem;
@@ -111,6 +117,10 @@ footer .copy{
   }
   .hero .details #email{
     word-wrap: break-word;
+  }
+  .goals{
+    width: 80%;
+    padding-left: 1rem;
   }
   footer .more-links{
     padding: 0 .8rem;
